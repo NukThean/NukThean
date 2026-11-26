@@ -1,16 +1,17 @@
-## Hi there 👋
-![NukThean's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=NukThean&theme=vue-dark&show_icons=true&hide_border=true&layout=compact)
-<!--
-**NukThean/NukThean** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### NukThean
 
-Here are some ideas to get you started:
+Building open-source Khmer speech recognition (ASR) models, cleaned Khmer datasets, and offline inference tools.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+#### Featured Project — Krama Khmer ASR
+
+An open-source (`Apache-2.0`) Khmer speech-to-text model (`343.4M` parameters) trained on `1,568.77 hours` across 8 domains for offline CPU, GPU, and client-side browser inference.
+
+| Resource | Link | Details |
+|---|---|---|
+| **GitHub (Inference & Web Demo)** | [`NukThean/krama-asr-khmer`](https://github.com/NukThean/krama-asr-khmer) | Standalone `krama_onnx.py`, `krama_asr.py`, and self-hostable `onnxruntime-web` app |
+| **PyTorch Weights** | [`Nukthean/krama-asr-khmer`](https://huggingface.co/Nukthean/krama-asr-khmer) | `658.2 MiB` `bfloat16` SafeTensors (`6.32%` FLEURS test / `2.69%` unseen iAny Beam-5 CER) |
+| **Offline CPU ONNX INT8** | [`Nukthean/krama-asr-khmer-onnx`](https://huggingface.co/Nukthean/krama-asr-khmer-onnx) | `358.3 MiB` dynamic INT8, zero PyTorch (`0.188 s/clip` Greedy on desktop CPU) |
+| **Live Browser Demo** | [`Nukthean/krama-asr-khmer-demo`](https://huggingface.co/spaces/Nukthean/krama-asr-khmer-demo) | Runs 100% client-side in your browser via WASM (no server) |
+| **Cleaned Khmer Corpus** | [`Nukthean/krama-asr-khmer-corpus`](https://huggingface.co/datasets/Nukthean/krama-asr-khmer-corpus) | `1,543.80 h` cleaned & audio-verified Khmer ASR dataset |
+
+- **Hugging Face:** [huggingface.co/Nukthean](https://huggingface.co/Nukthean)
